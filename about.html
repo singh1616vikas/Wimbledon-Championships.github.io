@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Wimbledon</title>
+
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!--------- Header Section Start ---------->
+    <header class="fixed-top">
+        <!-- Top Navabar -->
+        <div class="top-nav" id="home">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>user@123gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-8974665120</span>
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/WC-logo.png" alt="" class="WC-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Latest News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="museum.html">Museum & Tours</a></li>
+                                <li><a class="dropdown-item" href="#">Championships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="search d-flex">
+                        <a href="#" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#myModal">Login</a>
+                        <div class="ibmsrch">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="https://www.ibm.com/uk-en/campaign/wimbledon" target="_blank">
+                                <img src="images/ibm-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------- Header Section End ---------->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6 text-success text-center" id="myModalLabel">LOG IN FOR MYWIMBLEDON</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- to error: add class "has-danger" -->
+                        <div class="form-group py-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group py-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="sign-up">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-brand submit" data-bs-dismiss="modal">Submit</a>
+                    <button type="button" class="btn border-success">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Home Section Start ---------->
+    <div class="about-hero sticky-top">
+        <div class="content">
+            <p class="display-3 fw-bold text-white">About Wimbledon </p>
+        </div>
+
+    </div>
+    <!--------- Home Section Start ---------->
+
+    <!--------- About Section Start ---------->
+    <section class="about">
+        <div class="container py-5">
+            <div class="row text-center fw-bold">
+                <div class="col-12">
+                    <p class="display-6 fw-bold">About Us</p>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/about.jpg" class="d-block mx-lg-auto img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="h2 fw-bold text-body-emphasis lh-1 mb-3">About the AELTC</h1>
+                    <p class="fw-400">The day-to-day operations of The Championships are led and conducted by the
+                        AELTC.
+                    </p>
+
+                    <p class="fw-400">The AELTC is a wholly owned subsidiary of The All England Lawn Tennis & Croquet
+                        Club
+                        Limited ("the Club") and, on 1 August 2011, acquired all the assets and undertaking of the Club
+                        in relation to The Championships.</p>
+
+                    <p class="fw-400">The All England Lawn Tennis Club (Championships) Limited, Church Road,
+                        Wimbledon,
+                        Tel: +44 (0)20 8944 1066</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-brand btn-lg px-4 me-md-2">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- About Section Start ---------->
+
+    <section class="about-extra">
+        <div class="container">
+            <div class="row text-center fw-bold">
+                <div class="col-12">
+                    <p class="h3 fw-bold">Vision A to Z</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/archive.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Archive Footage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/clothing&equip.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Clothing & Equipment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/foundation.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Foundation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/guides.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Guides & Publications</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/heat-rule.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Heat Rule</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/privacy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/prize-money.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Prize Money & Finance</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/qualifying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Qualifying</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/result.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Order of Play and Results</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/tickets.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Tickets</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/umpries.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Umpries</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/about/trophics.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Trophics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="h2 fw-bold text-body-emphasis lh-1 mb-3">Wimbledon at Home</h1>
+                    <p class="fw-400">
+                        <b>Every year, fans from across the world celebrate The Championships in unique and special
+                            ways.</b>
+                    </p>
+
+                    <p class="fw-400">Wimbledon at Home provides a range of activities and experiences that everyone can
+                        enjoy regardless of whether they are
+                        attending The Championships in person, have already attended, are yet to attend, or watching
+                        from afar.</p>
+
+                    <p class="fw-400">2022 marks a significant milestone in Wimbledon’s history, as the AELTC celebrates
+                        100 years since the opening of the
+                        iconic Centre Court at Church Road.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-brand btn-lg px-4 me-md-2">Read More</button>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/about/home.jpg" class="d-block mx-lg-auto img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Footer Section Start ---------->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/WC-logo.png" alt="">
+                        </a>
+                        <p>The 2023 Wimbledon Championships was a Grand Slam tennis tournament that took place at the
+                            All England Lawn Tennis and
+                            Croquet Club in Wimbledon, London, United Kingdom.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/wimbledon" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/wimbledon" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/Wimbledon" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@Wimbledon" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">Copyright @2023. All rights Reserved | created by <span class="credit">Vikas
+                        Singh</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--------- Footer Section end ---------->
+
+
+    <!-- js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- JS Link -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

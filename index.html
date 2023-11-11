@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimbledon</title>
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fontAwesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!--------- Header Section Start ---------->
+    <header class="fixed-top">
+        <!-- Top Navabar -->
+        <div class="top-nav" id="home">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>user@123gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-8974665120</span>
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/WC-logo.png" alt="" class="WC-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#latest-news">Latest News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="museum.html">Museum & Tours</a></li>
+                                <li><a class="dropdown-item" href="#">Championships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="search d-flex">
+                        <a href="#" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#myModal">Login</a>
+                        <div class="ibmsrch">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="https://www.ibm.com/uk-en/campaign/wimbledon" target="_blank">
+                                <img src="images/ibm-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------- Header Section End ---------->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6 text-success text-center" id="myModalLabel">LOG IN FOR MYWIMBLEDON</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- to error: add class "has-danger" -->
+                        <div class="form-group py-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group py-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="sign-up">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-brand submit" data-bs-dismiss="modal">Submit</a>
+                    <button type="button" class="btn border-success">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="hero">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bg-hero.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <p class="h1">The Championships 2023 Highlights</p>
+                            <p>3 JULY - 16 JULY 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="h1">2024 Ticket Information</p>
+                            <p>3 JULY - 16 JULY 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide-3.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <p class="h1">Visit The Online Shop</p>
+                            <p>3 JULY - 16 JULY 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide-4.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p class="h1">The Wimbledon Championships 2023</p>
+                            <p>3 JULY - 16 JULY 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--------- About Section Start ---------->
+    <section class="about">
+        <div class="container py-5">
+            <div class="row text-center fw-bold">
+                <div class="col-12">
+                    <p class="display-6 fw-bold">About Us</p>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/winner.jpg" class="d-block mx-lg-auto img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="h2 fw-bold text-body-emphasis lh-1 mb-3">About Wimbledon Championships</h1>
+                    <p class="fw-400 fw-bold fs-5">Every year, fans from across the world celebrate The Championships in
+                        unique and
+                        special ways.</p>
+
+                    <p class="fw-400">The 2023 Wimbledon Championships was a Grand Slam tennis tournament that took
+                        place at the All England Lawn Tennis and
+                        Croquet Club in Wimbledon, London, United Kingdom.</p>
+
+                    <p class="fw-400">Wimbledon at Home provides a range of activities and experiences that everyone can
+                        enjoy regardless of whether they are
+                        attending The Championships in person, have already attended, are yet to attend, or watching
+                        from afar.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a type="button" class="btn btn-brand btn-lg px-4 me-md-2" href="about.html">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- About Section end ---------->
+
+    <section class="new-in pt-3 my-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="h2 fw-bold">Online Shop</p>
+                </div>
+            </div>
+            <div class="row g-4 py-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/shop/cap-1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Championships Logo Cap-White</h6>
+                            <p class="card-text">&#8377;3,650.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/shop/teddy.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Knitwear Teddy Bear</h6>
+                            <p class="card-text">&#8377;3,050.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/shop/t-shirt.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Championships Logo Cap-Navy</h6>
+                            <p class="card-text">&#8377;3,650.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/shop/skort.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 class="card-title">Championships Logo Cap-Navy</h6>
+                            <p class="card-text">&#8377;3,650.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-12 text-center">
+                    <a class="h4 btn btn-brand" href="shop.html" target="_blank">View
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------- news Section start ---------->
+    <section class="news-section py-4" id="latest-news">
+        <div class="container">
+            <div class="row text-center fw-bold">
+                <div class="col-12">
+                    <p class="display-6 fw-bold">Latest News</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+                <div class="col">
+                    <div class="card">
+                        <a
+                            href="https://www.wimbledon.com/en_GB/news/articles/2023-08-04/2023-08-04_aeltc_to_host_expanded_play_your_way_to_wimbledon_finals.html"><img
+                                src="images/news/1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <h5 class="card-title">AELTC to host expanded Play</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>FRI 04 AUG 2023 <span>12:01 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/news/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Warm Wimbledon welcomes</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>TUE 18 JUL 2023 <span>17:00 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/news/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Farewell to Chairman Ian Hewitt</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>TUE 18 JUL 2023 <span>16:12 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/news/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Championships 2023: By the numbers</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>TUE 18 JUL 2023 <span>16:12 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/news/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hsieh and Strycova turn back time to win ladies' doubles</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>SUN 16 JUL 2023 <span>16:12 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/news/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">A new Wimbledon champion: The first 24 hours</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small>TUE 18 JUL 2023 <span>14:00 BST</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <a class="h4 btn btn-brand" href="https://www.wimbledon.com/en_GB/news" target="_blank">View
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- news Section end ---------->
+
+    <!--------- Contact Section Start ---------->
+    <section class="contact-page-sec py-5" id="contact">
+        <div class="container py-3">
+            <div class="row text-center fw-bold">
+                <div class="col-12">
+                    <p class="display-6 fw-bold">Contact Us</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="h2">address</p>
+                                <span>1215 Lorem Ipsum, Ch 176080 </span>
+                                <span>Chandigarh , INDIA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="h2">E-mail</p>
+                                <span>info@LoremIpsum.com</span>
+                                <span>yourmail@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <p class="h2">office time</p>
+                                <span>Mon - Thu 9:00 am - 4.00 pm</span>
+                                <span>Thu - Mon 10.00 pm - 5.00 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact-page-form" method="post">
+                        <p class="h2">Get in Touch</p>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="single-input-field">
+                                        <input type="text" placeholder="Your Name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="single-input-field">
+                                        <input type="email" placeholder="E-mail" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="single-input-field">
+                                        <input type="text" placeholder="Phone Number" name="phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="single-input-field">
+                                        <input type="text" placeholder="Subject" name="subject" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 message-input">
+                                    <div class="single-input-field">
+                                        <textarea placeholder="Write Your Message" name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="single-input-fieldsbtn">
+                                    <input type="submit" value="Send Now">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-page-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1553497921355"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Contact Section end ---------->
+
+    <!--------- Footer Section Start ---------->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <a class="navbar-brand" href="https://www.wimbledon.com" target="_blank">
+                            <img src="images/WC-logo.png" alt="">
+                        </a>
+                        <p>The 2023 Wimbledon Championships was a Grand Slam tennis tournament that took place at the
+                            All England Lawn Tennis and
+                            Croquet Club in Wimbledon, London, United Kingdom.</p>
+                        <div class="social-links px-4">
+                            <a href="https://www.facebook.com/wimbledon" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/wimbledon" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/Wimbledon" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@Wimbledon" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">Copyright @2023. All rights Reserved | created by <span class="credit">Vikas
+                        Singh</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--------- Footer Section end ---------->
+
+
+    <!-- JavaScript Files -->
+    <!-- js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- main js file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

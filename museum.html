@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum & Tours</title>
+
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!--------- Header Section Start ---------->
+    <header class="fixed-top">
+        <!-- Top Navabar -->
+        <div class="top-nav" id="home">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <span>user@123gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91-8974665120</span>
+                        </p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/WC-logo.png" alt="" class="WC-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Championships</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="museum.html">Museum & Tours</a></li>
+                                <li><a class="dropdown-item" href="#">Championships</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="search d-flex">
+                        <a href="#" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#myModal">Login</a>
+                        <div class="ibmsrch">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="https://www.ibm.com/uk-en/campaign/wimbledon" target="_blank">
+                                <img src="images/ibm-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--------- Header Section End ---------->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6 text-success text-center" id="myModalLabel">LOG IN FOR MYWIMBLEDON</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- to error: add class "has-danger" -->
+                        <div class="form-group py-2">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group py-2">
+                            <label for="exampleInputPassword1">Password</label>
+                            <a href="#" style="float:right;font-size:12px;">Forgot password?</a>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="sign-up">
+                            Don't have an account? <a href="#">Create One</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" type="button" class="btn btn-brand submit" data-bs-dismiss="modal">Submit</a>
+                    <button type="button" class="btn border-success">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Home Section Start ---------->
+    <div class="museum sticky-top">
+        <div class="content">
+            <p class="display-3 fw-bold text-white">Museum & Tours</p>
+        </div>
+
+    </div>
+    <!--------- Home Section Start ---------->
+
+    <!--------- Museum Section Start ---------->
+    <section class="museum-1">
+        <div class="container py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/museum/museum-1.jpg" class="d-block mx-lg-auto img-fluid rounded-4 object-fit">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="h2 fw-bold text-body-emphasis lh-1 mb-3">Museum</h1>
+                    <p class="fw-400">Experience the history and traditions of The Championships at Wimbledon Lawn
+                        Tennis Museum. Get up close to the famous
+                        Championship Trophies, feel the fabrics of tennis fashions from the Victorian period, test your
+                        skills on the Batak wall
+                        and learn about how The Championships has developed since 1877.
+                    </p>
+
+                    <p class="fw-400">A fun and informative audio guide in English and BSL is available free of charge
+                        in the Museum.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#" type="button" class="btn btn-brand btn-lg px-4 me-md-2">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- Visit Section Start ---------->
+    <section class="visit pb-3">
+        <div class="container">
+            <div class="row text-center fw-bold">
+                <div class="col-12 text-brand">
+                    <p class="h2 fw-bold">Your Visit</p>
+                    <p class="fs-5">See below for further information on visiting the Wimbledon Lawn Tennis Museum
+                        and Tour and<br> what you can expect to see.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/Accessibility.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/families.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">What's On For Families</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/see.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">What to See</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/musexhibition.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Museum Exhibition</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/explore.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Explore the Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/m&tour.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Museum & Tour FAQs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/museum/library.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#" class="h5 card-title">Library and Research Enquiries</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--------- Booking Section end ---------->
+    <section class="booking pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h3 fw-bold text-center py-3">Book Now</p>
+                </div>
+            </div>
+            <div class="table-responsive table-bordered">
+                <table class="table text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 34%;">Booking</th>
+                            <th style="width: 22%;">Adult</th>
+                            <th style="width: 22%;">Concession</th>
+                            <th style="width: 22%;">Child</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Tour & Museum</th>
+                            <td>£27</td>
+                            <td>£23</td>
+                            <td>£17</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Museum only</th>
+                            <td>£15</td>
+                            <td>£13</td>
+                            <td>£10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col d-flex">
+                    <div class="card flex-fill">
+                        <div class="card-header">
+
+                            <h5 class="card-title mb-0">Forthcoming Tours</h5>
+                        </div>
+                        <div id="datatables-dashboard-projects_wrapper"
+                            class="dataTables_wrapper dt-bootstrap5 no-footer">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6"></div>
+                                <div class="col-sm-12 col-md-6"></div>
+                            </div>
+                            <div class="row dt-row">
+                                <div class="col-sm-12">
+                                    <table id="datatables-dashboard-projects"
+                                        class="table table-striped my-0 dataTable no-footer"
+                                        aria-describedby="datatables-dashboard-projects_info">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th class="sorting sorting_asc" tabindex="0"
+                                                    aria-controls="datatables-dashboard-projects" rowspan="1"
+                                                    colspan="1" aria-sort="ascending"
+                                                    aria-label="Name: activate to sort column descending">Type
+                                                </th>
+                                                <th class="d-none d-xl-table-cell sorting" tabindex="0"
+                                                    aria-controls="datatables-dashboard-projects" rowspan="1"
+                                                    colspan="1"
+                                                    aria-label="Start Date: activate to sort column ascending">Start
+                                                    Date</th>
+                                                <th class="d-none d-xl-table-cell sorting" tabindex="0"
+                                                    aria-controls="datatables-dashboard-projects" rowspan="1"
+                                                    colspan="1"
+                                                    aria-label="End Date: activate to sort column ascending">
+                                                    Availability
+                                                </th>
+                                                <th class="sorting" tabindex="0"
+                                                    aria-controls="datatables-dashboard-projects" rowspan="1"
+                                                    colspan="1" aria-label="Status: activate to sort column ascending">
+                                                    Time</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd">
+                                                <td class="sorting_1">Project Apollo</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-warning">Limited</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td class="sorting_1">Project Fireball</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-warning">Limited</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td class="sorting_1">Project Hades</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-warning">Limited</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td class="sorting_1">Project Nitro</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-warning">Limited</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                            <tr class="odd">
+                                                <td class="sorting_1">Project Phoenix</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-success">Good</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td class="sorting_1">Project Romeo</td>
+                                                <td class="d-none d-xl-table-cell">01/01/2023</td>
+                                                <td><span class="badge bg-success">Good</span></td>
+                                                <td class="d-none d-xl-table-cell">31/06/2023</td>
+                                                <td><a href="#" class="btn btn-brand">Buy Online</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-5">
+                                    <div class="dataTables_info" id="datatables-dashboard-projects_info" role="status"
+                                        aria-live="polite">Showing 1 to 6 of 9 entries</div>
+                                </div>
+                                <div class="col-sm-12 col-md-7">
+                                    <div class="dataTables_paginate paging_simple_numbers"
+                                        id="datatables-dashboard-projects_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled"
+                                                id="datatables-dashboard-projects_previous"><a
+                                                    aria-controls="datatables-dashboard-projects" aria-disabled="true"
+                                                    aria-role="link" data-dt-idx="previous" tabindex="0"
+                                                    class="page-link">Previous</a></li>
+                                            <li class="paginate_button page-item active"><a href="#"
+                                                    aria-controls="datatables-dashboard-projects" aria-role="link"
+                                                    aria-current="page" data-dt-idx="0" tabindex="0"
+                                                    class="page-link">1</a>
+                                            </li>
+                                            <li class="paginate_button page-item "><a href="#"
+                                                    aria-controls="datatables-dashboard-projects" aria-role="link"
+                                                    data-dt-idx="1" tabindex="0" class="page-link">2</a></li>
+                                            <li class="paginate_button page-item next"
+                                                id="datatables-dashboard-projects_next"><a href="#"
+                                                    aria-controls="datatables-dashboard-projects" aria-role="link"
+                                                    data-dt-idx="next" tabindex="0" class="page-link">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------- Footer Section Start ---------->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/WC-logo.png" alt="">
+                        </a>
+                        <p>The 2023 Wimbledon Championships was a Grand Slam tennis tournament that took place at
+                            the
+                            All England Lawn Tennis and
+                            Croquet Club in Wimbledon, London, United Kingdom.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">Copyright @2023. All rights Reserved | created by <span class="credit">Vikas
+                        Singh</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--------- Footer Section end ---------->
+
+    <!-- js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- JS Link -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

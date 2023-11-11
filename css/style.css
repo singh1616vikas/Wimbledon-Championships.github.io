@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.7;
+    color: #092032;
+}
+
+:root {
+    --bg-color: #34aed6;
+    --hover: #cde915;
+    --white: #fff;
+    --black: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #092032;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+
+.fw-400 {
+    font-size: 1.2rem;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+
+}
+
+/* header */
+
+
+.main-navbar {
+    background: var(--bg-color) !important;
+}
+
+/* Top Nav */
+.top-nav {
+    background-color: #86c32b;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--white);
+}
+
+.top-nav i,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.social-links a:hover {
+    background-color: var(--white);
+    color: var(--bg-color);
+}
+
+.navbar {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    background: var(--white);
+}
+
+.WC-logo {
+    width: 6rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--hover);
+}
+
+.ibmsrch {
+    border-left: 2px solid;
+    color: var(--white);
+    align-items: center;
+    display: flex;
+    margin-left: 0.9rem;
+}
+
+.ibmsrch a {
+    padding: 0 9px;
+}
+
+.ibmsrch a .fa-search {
+    color: var(--white);
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 4px;
+}
+
+/* btn */
+.btn {
+    padding: 9px 24px;
+
+}
+
+.btn-brand {
+    background-color: var(--hover);
+    color: var(--white);
+    border-color: var(--hover);
+    font-weight: 500;
+}
+
+.btn-brand:hover {
+    color: var(--white);
+    background-color: #86c32b;
+}
+
+/* Slider */
+.hero img {
+    height: 720px;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    background: #34aed6;
+    transition: opacity .6s;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+    background: var(--hover);
+}
+
+/********** NEWS Start **********/
+.news-section .card-footer small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+/********** CONTACT Start **********/
+
+.contact-info {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    background: var(--bg-color);
+    padding: 30px 0px;
+}
+
+.contact-page-sec .h2 {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-page-form .col-md-6.col-sm-6.col-xs-12 {
+    padding-left: 0;
+}
+
+.contact-page-form.contact-form input {
+    margin-bottom: 5px;
+}
+
+.contact-page-form.contact-form textarea {
+    height: 110px;
+}
+
+.contact-page-form.contact-form input[type="submit"] {
+    background: #071c34;
+    width: 150px;
+    border-color: #071c34;
+}
+
+.contact-icon i {
+    font-size: 48px;
+    color: #fff;
+}
+
+.contact-text p {
+    margin-bottom: 0px;
+}
+
+.contact-text .h2 {
+    color: var(--hover);
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-text span {
+    color: var(--white);
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-page-form input {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #f9f9f9;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.contact-page-form .message-input {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+}
+
+.single-input-field textarea {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #f9f9f9;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
+.single-input-fieldsbtn input[type="submit"] {
+    background: var(--hover) none repeat scroll 0 0;
+    color: var(--white);
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 0;
+    text-transform: capitalize;
+    width: 150px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.single-input-fieldsbtn input[type="submit"]:hover {
+    background: #86c32b;
+    transition: all 0.4s ease-in-out;
+}
+
+.single-input-field h4 {
+    color: #464646;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.contact-page-form {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-page-map {
+    margin-top: 36px;
+}
+
+.contact-page-form form {
+    padding: 20px 15px 0;
+}
+
+/* footer section */
+
+.footer-section i {
+    padding: 0 15px;
+    color: rgb(33 37 41 / 74%);
+    font-size: 25px;
+
+}
+
+.footer-section.bg-color {
+    background: #afaeae !important;
+}
+
+footer {
+    background: linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(../images/footer-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-top img {
+    width: 140px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.footer-top {
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+footer .social-links {
+    margin-left: 5px;
+    margin: 5px;
+}
+
+footer .credit {
+    color: var(--hover);
+    font-weight: bold;
+}
+
+
+
+
+
+/* --------- About Page Start ---------- */
+.about-hero {
+    position: relative;
+    background: linear-gradient(#0000000e, #000000a1), url(../images/about/about-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.about-hero .content {
+    position: absolute;
+    left: 30%;
+    top: 45%;
+}
+
+.about-extra .card,
+.visit .card {
+    border: none !important;
+}
+
+.about-extra .card-body .h5:hover,
+.visit .card-body .h5:hover {
+    border-bottom: 3px solid var(--hover);
+}
+
+
+
+/* --------- Museum Page Start ---------- */
+
+.museum {
+    position: relative;
+    background: linear-gradient(#0000000e, #000000a1), url(../images/museum/museum.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.text-brand p {
+    color: var(--bg-color);
+}
+
+
+/* Shop page start */
+.header-shop .btn-brand {
+    background-color: var(--hover);
+    color: var(--white);
+    border-color: var(--hover);
+    font-weight: 500;
+}
+
+.header-shop .social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-shop .social-icon i {
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.header-shop .social-icon i:hover {
+    color: var(--hover);
+}
+
+.shop-features .card,
+.new-in .card {
+    border: none !important;
+}
+
+.shop-features .card img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+}
+
+.shop-features .card .card-title {
+    display: none;
+}
+
+.shop-features .card:hover .card-title {
+    bottom: -10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background: #34add676;
+    width: 100%;
+    height: 10vh;
+}
+
+.shop-footer img {
+    width: 90px !important;
+}
+
+.shop-footer a {
+    color: var(--white);
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+.shop-footer .copy {
+    font-size: 0.8rem;
+}
